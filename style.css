@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header.hero {
+    height: 100vh;
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #a91919;
+  }
+  
+  .hero-content h1 {
+    color: black;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content .btn {
+    padding: 10px 20px;
+    background: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  section .btn{
+        padding: 10px 20px;
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+        cursor: pointer;
+  }
+
+  #services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  /* Keyframes for background zoom effect */
+@keyframes zoomIn {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Keyframes for background movement effect */
+@keyframes moveBg {
+  0% {
+    background-position: center center;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+
+/* Apply animation to specific sections */
+.hero div {
+  animation: zoomIn 10s infinite ease-in-out, moveBg 15s infinite linear;
+}
+
+#about {
+  animation: zoomIn 8s infinite alternate ease-in-out;
+}
+
+div[style*="background: url"] {
+  animation: moveBg 12s infinite ease-in-out;
+}
+/* Add transition and hover effect to service images */
+.service-card img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+/* Hover effect: zoom and add a shadow */
+.service-card img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+  .service-card {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  /* Full Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('assets/img/fullbg.jpg') center/cover no-repeat fixed;
+  color: #f5f5f5; /* Light font color */
+  font-family: Arial, sans-serif;
+  animation: bgAnimation 15s infinite alternate ease-in-out;
+  overflow-x: hidden;
+}
+
+/* Background Animation */
+@keyframes bgAnimation {
+  0% {
+    background-size: 100%;
+    filter: brightness(90%);
+  }
+  50% {
+    background-size: 105%;
+    filter: brightness(100%);
+  }
+  100% {
+    background-size: 100%;
+    filter: brightness(90%);
+  }
+}
+
+/* Header and Paragraph Styling */
+h1, h2, h3 {
+  color: #ffffff; /* White for headings */
+  text-align: center;
+  margin: 20px 0;
+}
+
+p {
+  color: #dcdcdc; /* Light gray for paragraph text */
+  line-height: 1.8;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+a {
+  color: #ff9800; /* Accent color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+
+/* Center content vertically and horizontally */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+/* Full Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url('assets/img/fullbg.jpg') center/cover no-repeat fixed;
+  color: #f5f5f5; /* Light font color for the entire page */
+  font-family: Arial, sans-serif;
+  animation: bgAnimation 15s infinite alternate ease-in-out;
+  overflow-x: hidden;
+}
+
+/* Background Animation */
+@keyframes bgAnimation {
+  0% {
+    background-size: 100%;
+    filter: brightness(90%);
+  }
+  50% {
+    background-size: 105%;
+    filter: brightness(100%);
+  }
+  100% {
+    background-size: 100%;
+    filter: brightness(90%);
+  }
+}
+
+/* General Text Styling */
+h1, h2, h3, p, a {
+  color: #f5f5f5; /* Light font color globally */
+}
+
+a:hover {
+  color: #ff9800; /* Highlight link color */
+  text-decoration: underline;
+}
+
+/* Styling for Text Inside Service Cards */
+.service-card h3,
+.service-card p {
+  color: #000000; /* Black font color for titles and text inside the 4 images */
+  font-weight: bold;
+}
+
+/* Service Images */
+.service-card img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+/* Hover effect for images */
+.service-card img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Center content vertically and horizontally */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+/* Set font color for "Welcome to TMS Events" */
+.hero-content h1 {
+  color: #ffcc00; /* Yellow color */
+  font-weight: bold; /* Optional: Make it bold */
+}
+/* About Us Section Styling */
+#about {
+  font-family: 'Georgia', serif; /* Change font style */
+  font-size: 1.2rem; /* Increase font size */
+  line-height: 1.8; /* Improve readability */
+  color: #f5f5f5; /* Light font color for consistency */
+  text-align: center; /* Center align the text */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+#about h2 {
+  font-size: 2rem; /* Increase heading size */
+  color: #ffcc00; /* Optional: Make heading yellow for emphasis */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+#about p {
+  margin-bottom: 15px; /* Add space between paragraphs */
+}
+/* Remove default margin and padding for body and html */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  margin: 0;
+  padding: 0;
+}
+/* Style for Our Services and Contact Us headings */
+#services h2, #contact h2 {
+  color: #ffcc00; /* Yellow color */
+  font-size: 2.4rem; /* Increase font size (adjust as needed) */
+  text-align: center; /* Center align for better appearance */
+  margin-bottom: 15px; /* Add space below the heading */
+}
